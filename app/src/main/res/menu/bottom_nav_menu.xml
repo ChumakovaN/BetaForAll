@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/_990491_tree_forest_nature_plant_wood_icon"
+        android:title="Лесничество" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/wood_winter_firewood_nature_forest_material_icon_260853"
+        android:title="Делянка" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/farm_axe_tool_cut_wood_trunk_icon_183560"
+        android:title="Регистрация отводов" />
+
+    <item
+        android:id="@+id/blankFragment"
+        android:icon="@drawable/_092564_profile_about_mobile_ui_user_icon"
+        android:title="сотрудники" />
+
+</menu>

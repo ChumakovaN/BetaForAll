@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_notifications"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:text="Регистрация отводов делянки"
+                />
+
+
+            <!-- Подпись для Деляна -->
+            <TextView
+                android:id="@+id/delyankaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="30dp"
+                android:text="Деляна"
+                android:textSize="18sp" />
+
+            <!-- Деляна Spinner -->
+            <Spinner
+                android:id="@+id/delyankaSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Подпись для Лесничество -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lesnichestvoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="10dp"
+                    android:text="....."
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Лесничество TextView (или можно использовать Spinner) -->
+
+            <!-- Подпись для Порода -->
+            <TextView
+                android:id="@+id/porodaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Порода"
+                android:textSize="18sp" />
+
+            <!-- Порода -->
+            <EditText
+                android:id="@+id/porodaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text" />
+
+            <!-- Подпись для Деловая (м³) -->
+            <TextView
+                android:id="@+id/delovayaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Деловая, м³"
+                android:textSize="18sp" />
+
+            <!-- Деловая (м³) -->
+            <EditText
+                android:id="@+id/delovayaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="numberDecimal" />
+
+            <!-- Подпись для Дровяная (м³) -->
+            <TextView
+                android:id="@+id/drovyannayaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Дровяная, м³"
+                android:textSize="18sp" />
+
+            <!-- Дровяная (м³) -->
+            <EditText
+                android:id="@+id/drovyannayaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="numberDecimal" />
+
+            <!-- Подпись для Отходы (м³) -->
+            <TextView
+                android:id="@+id/otkhodyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Отходы, м³"
+                android:textSize="18sp" />
+
+            <!-- Отходы (м³) -->
+            <EditText
+                android:id="@+id/otkhodyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="numberDecimal" />
+
+            <!-- Подпись для Ответственный -->
+            <TextView
+                android:id="@+id/otvetstvennyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ответственный"
+                android:textSize="18sp" />
+
+            <!-- Ответственный -->
+            <EditText
+                android:id="@+id/otvetstvennyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text" />
+
+            <!-- Подпись для Комментарий -->
+            <TextView
+                android:id="@+id/kommentariyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Комментарий"
+                android:textSize="18sp" />
+
+            <!-- Комментарий -->
+            <EditText
+                android:id="@+id/kommentariyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text" />
+
+            <!-- Кнопка Сохранить -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="25dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="250dp"
+                android:background="@drawable/rounded_button"
+                android:text="Сохранить" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

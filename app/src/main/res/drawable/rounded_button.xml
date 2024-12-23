@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон кнопки -->
+    <solid android:color="@color/select" /> <!-- Замените на нужный цвет -->
+
+    <!-- Скругление углов -->
+    <corners android:radius="20dp" /> <!-- Скругление углов -->
+
+    <!-- Опционально, добавьте тень -->
+    <elevation android:value="4dp" />
+</shape>

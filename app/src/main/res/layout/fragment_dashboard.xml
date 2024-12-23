@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_dashboard"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textDelyanka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Делянка"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textLesnichestvo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Лесничество"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/LesnichestvoSpiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textNaimenovanie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Наименование"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/naimenovanieEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите наименование" />
+
+            <TextView
+                android:id="@+id/textKhozyajstvo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Хозяйство"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/khozyajstvoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите хозяйство" />
+
+            <TextView
+                android:id="@+id/textSposobRubki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Способ рубки леса"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sposobRubkiSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textTehnologiyaZagotovki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Технология заготовки"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/tehnologiyaZagotovkiEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите технологию" />
+
+            <TextView
+                android:id="@+id/textPreobladayushchayaPoroda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Преобладающая порода"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/preobladayushchayaPorodaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите преобладающую породу" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/rounded_button"
+                android:text="Сохранить" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

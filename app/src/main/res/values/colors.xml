@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="select">#99ff99</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_item_icon_tint">#000000</color>  <!-- Цвет иконок -->
+    <color name="nav_item_text_color">#000000</color>  <!-- Цвет текста -->
+    <color name="nav_item_selected_icon">#99ff99</color> <!-- Цвет иконки для выбранного элемента -->
+    <color name="nav_item_selected_text">#99ff99</color> <!-- Цвет текста для выбранного элемента -->
+    <color name="nav_menu_background">#FFFFFF</color> <!-- Цвет фона меню -->
+</resources>
